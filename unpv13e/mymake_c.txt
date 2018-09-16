@@ -1,4 +1,7 @@
 gcc -I../lib -g -O2 -D_REENTRANT -Wall   -c -o exercise6.5.o exercise6.5.c
 gcc -I../lib -g -O2 -D_REENTRANT -Wall -o exercise6.5 exercise6.5.o ../libunp.a -lpthread
 
+# use make COMPILE_FLAGS+=-fPIC to take care of the Compilation fails with “relocation R_X86_64_32 against `.rodata.str1.8' can not be used when making a pie object” ; recompile with -fPIC error 
+# instead of just make, while making, according to Readme on unpv13 directory
+
 
