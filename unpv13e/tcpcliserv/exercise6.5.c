@@ -22,7 +22,7 @@ main(int argc, char **argv)
 
 	Connect(sockfd, (SA *) &servaddr, sizeof(servaddr));
 
-	pause();//str_cli(stdin, sockfd);		/* do it all */
+	/*pause();*/str_cli(stdin, sockfd);		/* do it all */
 
 	exit(0);
 }
